@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | Home of Decor</title>
+    <title>Home of Decor - Sign In</title>
+    <link rel="stylesheet" href="../styles/login.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/127922d8a4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header">
+            <div class="header-logo">
+                <img src="../images/login-page/header-logo.png" alt="Home of Decor Logo" class="logo">
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="form-wrap">
+                <div class="form-text">
+                    <h1>Welcome Back</h1>
+                    <p>Enter your mail to continue</p>
+                </div>
+                <form>
+                    <div class="form-input">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <input type="password" name="password" placeholder="Password" required>
+                        <button type="submit" class="sign-in-btn">Sign in</button>
+                    </div>
+                    <div class="options">
+                        <label>
+                            <input type="checkbox" name="remember"> Remember me
+                        </label>
+                        <a href="#">Forget password?</a>
+                    </div>
+                </form>
+
+                <div class="sign-in-options">
+                    <p>don't have an account? <a href="#">Sign up</a></p>
+                    <div class="divider">or</div>
+                    <p>sign in with</a></p>
+                    <div class="social-login">
+                        <a href="#" class="google-btn">
+                            <img src="../images/login-page/google.png" alt="google icon">
+                            Continue with Google
+                        </a>
+                        <button class="facebook"><i class="fa-brands fa-facebook" style="color: #305dab;"></i> <span>Continue with Facebook</span></button>
+                        <button class="twitter"> <i class="fa-brands fa-twitter" style="color: #74C0FC;"></i> <span>Continue with X</span></button>
+                    </div>
+                </div>
+            </div>
+            <p class="terms">By signing up to Home of Decor platform, you agree to our <a href="#">Terms and Conditions</a> and our <a href="#">Return Policy</a></p>
+        </div>
+    </div>
 </body>
 </html>
