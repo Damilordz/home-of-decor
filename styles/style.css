@@ -6,6 +6,7 @@
 }
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
   }
 body{
     font-family: "Poppins-Medium", sans-serif;
@@ -23,6 +24,7 @@ body{
     --GREY: #D9D9D9;
     --WHITE: #ffffff;
     --BLACK: #000;
+    --BLACK-TEXT: rgba(10, 10, 10, 0.719);
 }
 .font{
     font-size: 1.5rem;
@@ -32,17 +34,22 @@ section.landingpage{
     display: grid;
     grid-template-columns: repeat(1fr, 12);
     gap: 2rem;
-    position: relative;
+    /* position: relative; */
     margin: 0 7rem 0 2.5rem;
 }
 /* for small screen, here it is set to none */
 .overlay{
-    background: rgba(0, 0, 0, 0.349);
-    width: 100%;
-    height: 123vh;
+    /* display: grid;
+    grid-template-columns: repeat(1fr, 12);
+    gap: 2rem; */
+    /* position: absolute; */
+    /* z-index: 1; */
+    /* margin: 0 7rem 0 2.5rem; */
+    background: white
+    /* 
+    width: 100vw;
     position: absolute;
-    top: 0;
-    display: none;
+    top: 0; */
 }
 /* continued hero section */
 .write-up-content{
@@ -72,7 +79,7 @@ section.landingpage{
     font-weight: 100;
 }
 .shop-now a:hover{
-    background-color: var(--GREY);
+    background-color: var(--WHITE);
     color: var(--GREEN);
 }
 .view-details a{
@@ -192,13 +199,13 @@ section.landingpage{
 .table-sub{
     display: flex;
     flex-direction: column;
-    gap: 52rem;
+    gap: 20rem;
+    justify-content: space-between;
     padding: 3rem;
     color: var(--WHITE);
 }
-.textile-sub,
-.table-sub{
-   gap: 20rem; 
+.luxury-1a-sub{
+    gap: 52rem;
 }
 .textile-sub a,
 .table-sub a,
@@ -213,39 +220,104 @@ section.landingpage{
 .shop-sub{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 13rem;
     align-items: center;
-    color: var(--GREY);
+    color: var(--WHITE);
+    gap: 1.7rem;
+    margin-top: 11rem;
+}
+/* Ensure the parent element can contain the absolutely positioned overlay */
+.luxury-1a,
+.center-table,
+.textile,
+.shop {
+    position: relative; 
+}
+.table-over,
+.textile-over,
+.luxury-1a-over{
+    background: rgba(0, 0, 0, 0.856);
+    top: 0;
+    border-radius: 1.6rem;
+    position: absolute;
+    color: var(--WHITE);
+}
+.table-over,
+.textile-over,
+.luxury-1a-over{
+    height: 102vh;
+    width: 0%;
+    display: flex;
     justify-content: center;
 }
-.get{
-    width: 4rem;
+.luxury-1a-over{
+    height: 102vh;
+    width: 100%;
+}
+.table-over{
+    height: 50vh;
+    width: 100%;
+}
+.shop-over,
+.textile-over{
+    height: 50vh;
+    width: 100%; 
+}
+.shop-over a,
+.textile-over a{
+    color: var(--WHITE);
+    margin: 15rem 0;
+}
+.table-over a{
+    color: var(--WHITE);
+    margin: 10rem 0;
+}
+.luxury-1a-over a{
+    color: var(--WHITE);
+    margin: 30rem 0;
+}
+/* to center shop */
+.java-hide1 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background */
+    border-radius: 1.6rem;
 }
 /* features display section */
 .feature-categories{
-    height: 50vh;
     display: flex;
+    gap: 4rem;
     flex-direction: column;
-    margin: 0 7.5rem 0 8rem;
+    margin: 0 7.5rem 10rem 8rem;
 }
 .categories-class-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-end;
 }
 .categories-class{
     height: 80%;
-    width: 15%;
+    width: 45%;
 }
 .categories-class img{
     width: 100%;
 }
+.categories-media{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* trending products */
 .trending-products{
     display: flex;
     flex-direction: column;
     gap: 2rem;
     margin: 0 7.5rem 0 8rem;
+    min-height: 50vh;
 }
 .trending-products-header{
     display: flex;
@@ -255,6 +327,7 @@ section.landingpage{
 ul.sample-rooms{
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-right: 10rem;
 }
@@ -262,47 +335,47 @@ ul.sample-rooms{
     color: var(--GREY-DARK);
     text-decoration: none;
     font-weight: 700;
+    flex-grow: 1;
+    flex-basis: 1rem;
 }
-li.li-color a{
-    color: var(--FLAT-BLACK);
+/*trending images  */
+.trending-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
-/*trebding section  */
 .trending-products-class{
-    height: 55%;
-    width: 33%;
+    border:1px solid black;
     position: relative;
 }
-.trending-products-container{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-.trending-products-class-1,
-.trending-products-class-2{
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-.wallace-one img{
-    width: 100%;
-    height: 100%;
-  }
-  .trending-products-class-1 p,
-  .trending-products-class-2 p{
-    border: 1px solid var(--FLAT-BLACK);
-    position: absolute;
-    width: 100%;
-    top: 49vh;
-    z-index: -1;
+.room-text{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
+    font-weight: 600;
+    color: var(--BLACK-TEXT);
+}
+.trending-products-class-all img
+{
+    width: 100%;
+}
+.wallace-one{
+    flex-basis: 30rem;
+    flex-grow: 1;
+}
+  /* on display */
+
+  .sample-rooms li a.active {
+    color: rgba(10, 10, 10, 0.719);
+}
+  .trend-hide{
+    display: none;
   }
-  .wallace-two{
-    margin-top: 15%;
-    padding: 3rem 2rem;
-    font-weight: 700;
-    color: var(--FLAT-BLACK);
+  .trend-hover{
+    border: 1px solid red;
+    padding: 2rem;
+    position: absolute;
   }
   /* super sale section*/
   .super-sale{
@@ -451,6 +524,7 @@ li.li-color a{
     min-height: 50vh;
     display:  flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 5rem;
 }
 .client h2{
@@ -458,11 +532,13 @@ li.li-color a{
 }
 .client-comment-container{
     display: flex;
+    /* flex-wrap: wrap; */
     gap: 2rem;
 }
 .client-comment-1{
     background: var(--GREEN);
     border-radius: 1.6rem;
+    display: flex;
 }
 .client-photo{
     display: flex;
@@ -475,6 +551,8 @@ li.li-color a{
 .client-pad{
     display: flex;
     flex-direction: column;
+    flex: 1;
+    flex-wrap: wrap;
     gap: 2rem;
     padding: 3rem;
     color: var(--GREY);
@@ -489,19 +567,6 @@ li.li-color a{
     color: var(--GREY-DARK);
 }
 /* FAQ*/
-.client-comment--display{
-    margin: 1rem 7.5rem 0 8rem;
-    background: var(--GREEN);
-    border-radius: 1.6rem;
-    color: var(--GREY);
-   padding: 2rem;
-   font-size: 1.8rem;
-}
-.comment-display{
-    display: flex;
-    justify-content: space-between;
-}
-/* to be displayed when the FAQ is clicked */
 .got-questions{
     display: flex;
     flex-direction: column;
@@ -517,13 +582,32 @@ li.li-color a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:  0.8rem 3rem;
+    padding:  1.2rem 3rem;
     background: var(--GREY);
     border-radius: 1rem;
 }
 .comment-link-sub img{
     height: 10%;
     width: 70%;
+    cursor: pointer;
+}
+/* to be displayed when the FAQ is clicked */
+.java-hide{
+    display: none;
+}
+.client-comment--display{
+    background: var(--GREEN);
+    border-radius: 1.6rem;
+    color: var(--GREY);
+    padding: 2rem;
+    font-size: 1.8rem;
+}
+.comment-display{
+    display: flex;
+    justify-content: space-between;
+}
+.comment-display img{
+    cursor: pointer;
 }
 /* blog section */
 .blog-text{
@@ -538,12 +622,9 @@ li.li-color a{
 .blog-photo{
     border-radius: 1.6rem;
 }
-.blog-photo{
-    border-radius: 1.6rem;
-}
 .blog-photo img{
     width: 100%;
-    height: 60vh;
+    height: 100%;
 }
 .blog-images{
     display: flex;
@@ -574,6 +655,7 @@ li.li-color a{
     display:  flex;
     flex-direction: column;
     gap: 3rem;
+    position: relative;
 }
 .creator-section-1{
     display: flex;
@@ -588,11 +670,28 @@ li.li-color a{
     width: 34%;
 }
 .image-content-1 img{
+    position: relative;
     width: 100%;
 }
 .image-container{
     display: flex;
     gap: 2.5rem;
+}
+/* hover background */
+.creator-sub{
+    background: rgba(0, 0, 0, 0.856);
+    top: 18rem;
+    height: 73.9%;
+    width: 28vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--WHITE);
+    display: none;
+}
+.creator-sub a{
+    color: var(--WHITE)
 }
 /* patnership */
 .trusted-section{
@@ -691,6 +790,10 @@ li.li-color a{
     color: var(--GREY);
 }
 
+.cont a:hover{
+    background: var(--GREEN);
+    color: var(--WHITE);
+}
 /* footer section */
 footer {
     display: flex;
@@ -734,58 +837,258 @@ footer {
   }
   
 
-
-
-
 /* media screns */
-@media(max-width:768px){
-      .overlay{
-        height: 81vh;
-      }
-}
-
-@media (max-width:360px){
+@media (min-width: 320px) and (max-width: 820px){
     html {
         font-size: 50%;
+        overflow-x: hidden;
       }
-      /* set to take up the whole grid */
-    .sitting{
-        grid-column: 1/13;
-        position: relative;
-        z-index: -1;
+        section.landingpage{
+            display: grid;
+            grid-template-columns: repeat(1fr, 12);
+            gap: 2rem;
+            position: relative;
+            margin: 5% 5% 0 5%;
+        }
+        
+        .overlay{
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border-radius: 1.6rem;
+        }
+
+        .write-up-content {
+            grid-column: 1 / -1;
+            gap: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            z-index: 1;
+            color: white;
+            display: flex;
+        }
+    
+        .view-details a{
+            color: var(--WHITE);
+            border-bottom: 1px solid var(--WHITE);
+        }
+
+        .modern-design {
+            margin: 8rem 4.5rem 1rem 0;
+            font-size: 3rem;
+            line-height: 1.2;
+            text-align: center;
+            color: var(--BLACK);
+        }
+    
+        .paragraph-text {
+            font-size: 1.3rem;
+            text-align: center;
+            padding: 0 1rem;
+            margin-top: 3rem;
+        }
+    
+        .link-buttons {
+            align-items: center;
+            gap: 2rem;
+            margin: 0.8rem 0 0 2rem;
+        }
+    
+        .shop-now a, .view-details a {
+            padding: 0.5rem 1rem;
+        }
+    
+        .fig-div {
+            margin: 6rem 4rem 0 0;
+        }
+    
+        .hero-numbers {
+            font-size: 1.5rem;
+        }
+    
+        .fig-sub-container {
+            border: none;
+            text-align: center;
+        }
+    
+        .sitting, .dinning, .bedroom {
+            grid-column: 1 / -1;
+        }
+    
+        .sitting img {
+            width: 100%;
+        }
+
+        .dinning{
+            display: none;
+        }
+        .bedroom{
+            display: none;
+        }
+    
+    /* the small link section */
+    .small-link{
+        padding: 0.8rem 1rem 0 0;
     }
-    .write-up-content{
-        gap: 4.2rem;
-        grid-column: 1/13;
-        position: absolute;
-        top: 8rem;
-        color: var(--WHITE);
-        font-weight: 700;
-        position: absolute;
-        z-index: 1;
+
+    /* features display section */
+    .feature-categories{
+        margin: 0 0 8
+        rem 8%;
     }
-    .view-details a{
-        color: var(--WHITE);
-        text-decoration: none;
-        padding-bottom: 0.1rem;
-        border-bottom: 1px solid var(--WHITE);
+    .categories-class-container{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
     }
-    .modern-design{
-        color: var(--GREY);
-        font-weight: 900;
+
+    .categories-class{
+        height: 100%;
     }
-    .hero-numbers{
+
+    .categories-class img{
+        width: 80%;
+    }
+    .categories-media{
+        gap: 2rem;
+    }
+
+    /* hoverable section */
+    .new-luxury{
+        margin: 0 5% 8rem 5%;
+    }
+
+    .luxury-display{
+        flex-direction: column;
+    }
+
+    .luxury-1{
+        width: 100%;
+    }
+
+    .luxury-1a{
+        width: 100%;
+    }
+
+    /* trending products */
+    .trending-products{
+        margin: 0 5% 0 5%; 
+    }
+   
+    /* super sale */
+    .super-sale{
+        margin: 8rem 5% 0 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .super-sale-container{
+        width: 100%;
+        height: 60vh;
+    }
+
+    .super-sale-container2{
+        width: 100%;
+    }
+
+/*  online deals section*/
+    .online-deals{
+        margin: 9rem 5% 0 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .online-deals-1,
+    .online-deals-2{
+        width: 100%;
+        height: 65vh;
+    }
+
+    /* testimonial section */
+    .client-page,
+    .question-answer,
+    .blog-section,
+    .creator-section{
+        margin: 10rem 5% 0 5%;
+    }
+
+    .client-comment-container{
+        flex-direction: column;
+    }
+ 
+    /* blog section */
+    .blog-images{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    /* creator-section */
+    .creator-section-p{
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .creator-section-1{
+        align-items: center;
+    }
+
+    /* patnership */
+    .trusted-section-icons{
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    
+/* subcsription section*/
+    .grey-border{
+        margin: 8rem 5% 0 5%;
+    }   
+
+    .border-padd{
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .sucbscribe-text{
+        width: 100%;
         font-size: 2.5rem;
-        text-align: left;
+        flex-direction: column;
+        gap: 4rem;
     }
-    .overlay{
-        display: block;
-        height: 131vh;
+
+    .sucbscribe-text-sub3{
+        gap: 4rem;
+       gap: 4rem;
+        line-height: 1.8;
+        width: 30rem;
     }
-    .dinning{
-        display: none;
+
+    .sucbscribe-image{
+        height: 50vh;
+        width: 100%;
     }
-    .bedroom{
-        display: none;
+
+    .sub a{
+        padding: 0.4rem 1.5rem;
+        margin-top: 0.4.5rem;
+    }
+
+/* final section before the footer */
+    .join-contact{
+        margin: 8rem 5% 8rem 5%;
     }
 }
+
+/* @media (min-width: 820px){
+    html {
+        font-size: 100%;
+        overflow-x: hidden;
+      }
+        .overlay{
+            border-radius: 1.8rem;
+        }
+} */
