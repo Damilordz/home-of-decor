@@ -35,6 +35,49 @@ myAccount.addEventListener("click", () => {
   navLinks.forEach((link) => link.classList.remove("active-menu"));
 });
 
+// product-page js
+
+const badgeHeart = document.querySelectorAll(".card-item");
+
+badgeHeart.forEach((item) => {
+  const liked = item.querySelector(".heart");
+
+  liked.addEventListener("click", () => {
+    liked.classList.remove("fa-regular");
+    liked.classList.add("fa-solid");
+
+    liked.classList.toggle("liked");
+  });
+});
+
+// sidebar js
+document.addEventListener("DOMContentLoaded", function () {
+  // Get all filter heading elements
+  const filterHeadings = document.querySelectorAll(".filter_heading");
+
+  // Iterate over each filter heading
+  filterHeadings.forEach(function (filterHeading) {
+    // Find the associated list and icon within the current filter heading
+    const filterList = filterHeading.nextElementSibling;
+    const toggleIcon = filterHeading.querySelector(".toggle-icon");
+
+    // Set up the click event listener for each heading
+    filterHeading.addEventListener("click", function () {
+      // Toggle the display of the list
+      if (
+        filterList.style.display === "none" ||
+        filterList.style.display === ""
+      ) {
+        filterList.style.display = "flex";
+        toggleIcon.classList.add("active");
+      } else {
+        filterList.style.display = "none";
+        toggleIcon.classList.remove("active");
+      }
+    });
+  });
+});
+
 loginRef.addEventListener("click", () => {
   window.location.href = "../html/sign-in.html";
 });
@@ -155,3 +198,15 @@ setupToggle('comment-link-sub-14', 'comment-display-14');
   });
 
 
+  // Add event listeners to the cancel images to hide the client comment when clicked
+  const cancelImages = document.querySelectorAll(
+    ".client-comment--display .comment-display img"
+  );
+
+  cancelImages.forEach((img) => {
+    img.addEventListener("click", () => {
+      const clientComment = img.closest(".client-comment--display");
+      const javaHideSection = clientComment.closest(".java-hide");
+      javaHideSection.style.display = "none";
+    });
+  });
