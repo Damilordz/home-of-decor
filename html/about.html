@@ -3,42 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <script src="https://kit.fontawesome.com/127922d8a4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" type="text/css" href="/abouttablet.css" media=" (max-width: 1100px)">
-    <link rel="stylesheet" type="text/css" href="aboutmobile.css" media="(max-width: 380px)">
+    <link rel="stylesheet" href="../styles/components.css" />
+    <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" type="text/css" href="../styles/abouttablet.css" media=" (max-width: 1100px)">
+    <link rel="stylesheet" type="text/css" href="../styles/aboutmobile.css" media="(max-width: 380px)">
     
     <title>Home of Decor - About Us</title>
     
 
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.57717 2.73521L4.53548 4.85802C3.44763 5.31606 2.90372 5.54508 2.5977 6.00596C2.29169 6.46684 2.29169 7.05701 2.29169 8.23735V19.7087H5.04169V10.542C5.04169 9.67776 5.04169 9.24564 5.31017 8.97714C5.57866 8.70866 6.01078 8.70866 6.87502 8.70866H15.125C15.9893 8.70866 16.4214 8.70866 16.6899 8.97714C16.9584 9.24564 16.9584 9.67776 16.9584 10.542V19.7087H19.7084V8.23735C19.7084 7.05701 19.7084 6.46684 19.4024 6.00596C19.0963 5.54508 18.5524 5.31606 17.4645 4.85802L12.4229 2.73521C11.7212 2.43973 11.3703 2.29199 11 2.29199C10.6298 2.29199 10.2789 2.43973 9.57717 2.73521Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M10.0833 5.95801H11.9166" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M11.9167 14.208H10.0833C9.2191 14.208 8.78697 14.208 8.51848 14.4765C8.25 14.745 8.25 15.1771 8.25 16.0413V17.8747C8.25 18.7389 8.25 19.171 8.51848 19.4395C8.78697 19.708 9.2191 19.708 10.0833 19.708H11.9167C12.7809 19.708 13.213 19.708 13.4815 19.4395C13.75 19.171 13.75 18.7389 13.75 17.8747V16.0413C13.75 15.1771 13.75 14.745 13.4815 14.4765C13.213 14.208 12.7809 14.208 11.9167 14.208Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>Home of Decor   
+    <!-- Header Section -->
+<header>
+    <div class="logo">
+      <a href="#"><img src="../images/logo.svg" alt="Home of Decor logo" /></a>
+    </div>
+    <div class="nav-menu" id="nav-menu">
+      <div class="close-nav" id="close-nav"><i class="fa-solid fa-xmark"></i></div>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="../html/index.html">Home</a></li>
+          <li><a href="../html/product_page.html">Product</a></li>
+          <li><a href="../html/product_page.html">Categories</a></li>
+          <li><a href="../html/about.html">About us</a></li>
+          <li><a href="../html/blog.html" class="active-menu">Blog</a></li>
+          <li><a href="../html/contact-us.html">Contact us</a></li>
+        </ul>
+      </nav>
+      <div class="profile">
+        <div class="my-account">
+          <a href="../html/profile.html">
+            <i class="fa-regular fa-user fa-lg" style="color: #000000"></i>
+            <span>My account</span>
+          </a>
         </div>
-        
-        <nav>
-            <ul>
-                <li><a href="home-of-decor/html/index.html">Home</a></li>
-                <li><a href="home-of-decor/html/product_page.html">Product</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="/about.html" class="active">About us</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="home-of-decor/html/contact-us.html">Contact us</a></li>
-            </ul>
-        </nav>
-        <div class="user-actions">
-            <a href="#"><i class="fa-regular fa-user"></i>   My account</a>
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="#"><i class="fa-regular fa-heart"></i></a>
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <div class="cart-section">
+          <div class="search"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #000000"></i></div>
+          <div class="wish-list"><i class="fa-regular fa-heart fa-lg" style="color: #000000"></i></div>
+          <div class="shopping-cart"><span class="material-symbols-outlined"> shopping_cart </span></div>
         </div>
-    </header>
+      </div>
+    </div>
+    <div class="nav-bar" id="nav-bar"><i class="fa-solid fa-bars fa-lg"></i></div>
+  </header>
     <main>
         <section class="hero">
             <h1>About Us</h1>
@@ -48,7 +60,7 @@
         </section>
     </main>
     <div class="new">
-       <img src="https://s3-alpha-sig.figma.com/img/e4a1/ea3d/08530f73ed502a93afb37f0939b400c2?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cgXndI2FnABKYnLDF5utfwCP63TJ0IBi0U8ll-9ZU6ZnAwOFconPy62CC7R0id2mFi4B050CAdxZfrb5dNBiW0rN1IQB9qi6kI6-lJMnqmq~vf0nFTiXGGZ-MlVvfTK67zAyJ6bS-yqRsg0ZKqusSEamImv6PdTHYipBYJVtsD1uqtF8eq7WVN~~XStc6yc11RLSgtXd2-totMmpDcxNMYd4v70kNeiz-OKOz3MqkxOKj1PTR-v4IOPl63fylHxp6ehzB9WEBeJj62f-4LfDHpyc9b-6l7aWo0sGLOaDYjCxdPZDiYzPrslD2ygKtMzeW24XqeP2fFnn2AqDd4dY5w__"> 
+       <img src="../images/NEW2.jpg"> 
     </div>
     <div class="new-1">
         <h3>HOME OF DECOR DESIGN</h3>
@@ -57,7 +69,7 @@
     </div>
     <div class="new-2">
         <div class="new-3">
-            <img src="https://s3-alpha-sig.figma.com/img/3a5f/0b59/fb1b994d595bd5a27bf8511dd19c3f22?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GCwkn6o~9X0QnGQZHtx-JA7PvTioj~-t2kkBWZvontyP~q6bftqSKXwL7CrS0YFofdP5rMArtyg4Y6doZdgoAhSnl~Dr9rE-TaSvVTrQ1XcjTGfIZyUT-FAof1A4~GtTtD2I-Pz-xFAw8s4J1xDcsBdJANtMe1T0POYj91TxEohDESK4riHI6MAEr8z-nbqCHRdwUm3etmTuDmgrv~ucptLi86UcIdErjvKhV4H9y0PjOWD0CunPE2VmFTDuwmxxMVtNwzgqNv4gEVAKgkhJpOKQJCzSQU~ezF-665zXeAOWycTA1K-CS77xp9s-dcirmeRFUSOD7tEd9P7OrzTBGQ__">
+            <img src="../images/NEW3.jpg">
         </div>
         <div class="new-4">
             <h2>From Humble Beginning</h2>
@@ -72,12 +84,12 @@
             </p>
         </div>
         <div class="new-6b">
-            <img src="https://s3-alpha-sig.figma.com/img/023b/71fd/0508abbdaae5d2a26cdf4f54ff30c13b?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qxeorJ3ZJWytsfeblX1t2LgOBmVCiAr2kIQlirul8bUIp7u-Dn-NSblOxuHK~8LrBQkLprjElS2H4co71POopRIAyUHHrTe9yxaleULDxjC6YKNiRSCVL2ixleMGQbQFmU8Wwfkz55RavFuOO3cW5wN9sjhadHglFhQwfbGi2RNVYfMGO~SSGv-KYyt6PeN9n5bfrzJWyu54NnolcUK9tKnfK6a5EzZzwfaxIL2kHtOGrbEYS1LbPuV5IM-WxGiIwn4O6NlPjKmGJ6tveRYqRs69YM2rzO77l8IoHZ6NWQpUj6WKW8fANtNi4CMM7G85jICwA3AvhRC8GaGmMZA0sw__">
+            <img src="../images/NEW4.jpg">
         </div>
     </div>
     <div class="new-7">
         <div class="new-8">
-            <img src="https://s3-alpha-sig.figma.com/img/b839/87a1/d9f3cbb6b53878130ea3d3d37c3dea62?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=j65pXj6sMzI6yRhbJZzFew4fbTZDKvVz4xOc0yb1cf8adMD6HzfZdx~MmIWodm-kQn5OegnOYd~aIeL1i5Gut1UpgD9kFmRcE9zXGBIweHb3O5ssE5dCaHKXNepCXPVnKpA6etkhzc1Ei6ccRiJbH5Ov0v5N6Z80DH7iTCq-513jC-jg~JL7UX7EzKrkiUpztN-ZK4VYrd3ePyzwaVsDVNQ8hfoMBkgFLnZi5Fv66EZPfnMjcBTBMhOy9GI5oA9APCPb~Y9yMrmr6zJHgl9Jghl-Dtz1VzW8jaAiGNQmJNIy81Kos2Ow-s2CUTejf8T1PFR-UFpTzeYaIeLfrfL2Xg__">
+            <img src="../images/NEW5.jpg">
         </div>
         <div class="new-9">
             <h2>Milestones & Achievements</h2>
@@ -90,12 +102,12 @@
             <p>Home of decor would love to serve clients all over the<br> world. With distribution centers in key locations while <br> making sure that our high quality furniture reaches<br> your respective homes effectively and safely. Our Global<br> presence would be a testament to the love and support of our <br> customers who inspired us to start this amazing journey. </p>
         </div>
         <div class="new-9d">
-            <img src="https://s3-alpha-sig.figma.com/img/023b/71fd/0508abbdaae5d2a26cdf4f54ff30c13b?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qxeorJ3ZJWytsfeblX1t2LgOBmVCiAr2kIQlirul8bUIp7u-Dn-NSblOxuHK~8LrBQkLprjElS2H4co71POopRIAyUHHrTe9yxaleULDxjC6YKNiRSCVL2ixleMGQbQFmU8Wwfkz55RavFuOO3cW5wN9sjhadHglFhQwfbGi2RNVYfMGO~SSGv-KYyt6PeN9n5bfrzJWyu54NnolcUK9tKnfK6a5EzZzwfaxIL2kHtOGrbEYS1LbPuV5IM-WxGiIwn4O6NlPjKmGJ6tveRYqRs69YM2rzO77l8IoHZ6NWQpUj6WKW8fANtNi4CMM7G85jICwA3AvhRC8GaGmMZA0sw__">
+            <img src="../images/NEW4.jpg">
         </div>
     </div>
     <div class="new-9e">
         <div class="new-9f">
-            <img src="https://s3-alpha-sig.figma.com/img/11fc/274c/91855b16a75a954894749cd7d05d0228?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GF~3Jt8EaagkZpkFgvXRbyUbV4j9p-CIspT9V0oIXq0S18eHATyk7XHkCZhwVAi7zVoUwK4WSE8CcVaO0hVXlN8oRDug-2dkaQxhKxdWmKE-vlx0mZ52fv01XMl4Kw3iFMt43TffvbnXd5ocmI-Ql2TjmJ32UOtz-YWcnQScHWu85KKd0d89yU6Dot9-MW2Mg30gHfTuqyoHgW-6zDl5k11zz57n-2RmY5w1RlGB6cpmbVfkTWcPybY4um~St95UMg2pQQvWm2YcPpquJ4mpF5PKved1nUGTl1BzPUE6JPf2nhYKQcuEpOod7YT2enoVSQ0Hacm72TzUNBIYg0CvwA__">
+            <img src="../images/NEW6.jpg">
         </div>
         <div class="new-9g">
             <h2>Looking Ahead</h2>
@@ -107,47 +119,47 @@
     </div>
     <div class="container-1">
         <div class="member">
-            <img src="/Bamidele.jpg">
+            <img src="../images/Bamidele.jpg">
             <h3>Product Designer</h3>
             <p>Bamidele</p>
         </div>
         <div class="member">
-            <img src="/Project manager.jpg">
+            <img src="../images/Project manager.jpg">
             <h3>Project Manager</h3>
             <p>Felicia</p>
         </div>
         <div class="member">
-            <img src="/CHISOM.jpg">
+            <img src="../images/CHISOM.jpg">
             <h3>Product Designer</h3>
             <p>Chisom</p>
         </div>
         <div class="member">
-            <img src="https://s3-alpha-sig.figma.com/img/01ef/5970/a07ba39dd55a1f99eb9d3460bd3b11ce?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EP8n6H8Eh4zq6VStCsto3QkhQJuBtyD7wgMGGy7NKIDGBGVyyLOfUvPYlgqn8Bt4FdyeT3YvXN-gjczkE1gECK97ih-vOk5VH~X-1RsQJRh5qhPQ4O3NqE9jbmRe82WJaQmY9gtJ-p26S37op06WvKR7OLcOrbBYoKn4o9jZjHtI5ZzDnM-VHXQe7qj8aJFGPG7MMqaC-Q75VPzDiP72onym1O7z9PjeGcqgeFg1fLhPH2Uipt-PTiRm3WHI9wxw2VBu5JwZWjbRcQvwQmnYdtrkBNO44VKRH9oz8KJT1TuaZGeMmzv2~a8M9fbPAg~cM5OsnAPxhXLmqCi8I3mj8w__" alt="Oluwasegun Salami">
+            <img src="../images/SALAMI.jpg">
             <h3>Oluwasegun Salami</h3>
             <p>Product Designer</p>
         </div>
         <div class="member">
-            <img src="https://s3-alpha-sig.figma.com/img/edbd/1ebc/d3efe5a7ac5f2276bf90a773f729aef1?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=h~gajNcEvT87DspNd0XWyT2ixA-5TQQNGhPR5Mx3eYtDl9KmVJ-Q54v0oHtvblKFuplICssn-ZHJZ4uNqOhLBpeBUr7UcrK~pWY1c9XChrEDcT3h2tQEgXXJw9LE3P6dZzZZXtly0vjs79fvOswuYZy7UWBMpsxWYLLjWXi1n1vwLP98jeC8ZV6JqqIEyqKCwphvXzkIQE57p4fZWC7wFtfeW7RprEy21F7BrrYu-ecZ8vuP2FikvMo0M~xf~ND7KgUg0SU1gFInFELTcbJ~~9wQOh45qhSp2cHi~YbQepS-IHIEqMYPD5wAfctfxufj8ElR5vMZ4y4f6GaaIRiDNw__" alt="Adesina Maria">
+            <img src="../images/MARIA.jpg">
             <h3>Adesina Maria</h3>
             <p>Frontend Developer</p>
         </div>
         <div class="member">
-            <img src="https://s3-alpha-sig.figma.com/img/0572/e082/1d0138698df8ae889945ec5d5b251cc4?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=o0gdyzHNMY4czV8Fo2YODijKRqne3X1LdIfFHwiuUazB71gSbvAaUddHQvCztQHDvaOITfad9QSevI0oUuDu7Wz3ny7zx45NalgiXXuyhTvEGb481mpvMEEN6lEAFjXMG8satuYSS0Vr2bymiNmVn9mU2PO9NPd~a082u12AQof2t~wR2qMPImNg11ENsE2F-WZC5mfuOk1qsHih~dhr4yhvt03kUSdyrCIFInNUmbCh9eHXh6nNKSK-eNB4QU1HntQWGICJB4Of6r3fzZEK45kmzevG-JViDFsou4O2jhaonRo8Ui6of1EGrmr73KBT~QoELFTHM6Te481rTrwqbw__" alt="Damilola Emmanuel">
+            <img src="../images/DAMI.jpg">
             <h3>Damilola Emmanuel</h3>
             <p>Frontend Developer</p>
         </div>
         <div class="member">
-            <img src="/Blessing.png.jpg" alt="Blessing James">
+            <img src="../images/MY PHOTO.jpg" alt="Blessing James">
             <h3>Blessing James</h3>
             <p>Front-end Developer</p>
         </div>
         <div class="member">
-            <img src="/Temi.png.jpg" alt="Temi Jeje">
+            <img src="../images/Temi.png.jpg" alt="Temi Jeje">
             <h3>Temi Jeje</h3>
             <p>Front-end Developer</p>
         </div>
         <div class="member">
-            <img src="/Famouc.png.jpg" alt="Famoucs">
+            <img src="../images/Famouc.png.jpg" alt="Famoucs">
             <h3>Faiq Anthony</h3>
             <p>Front-end Developer</p>
         </div>
@@ -159,7 +171,7 @@
     <div class="container">
         <section class="reviews">
             <div class="review-card">
-                <img src="https://s3-alpha-sig.figma.com/img/2165/8139/d541441af489758e13c2cd44af72678e?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QpcWMVjnCsJgZxC0ebfF1yOBUsmVr9Ljzlb1ovVnWJ250gDyLqWFOtrZgUQCC8bt1vIjcFmR4aj1b2n6wU2NxardFRPwYAXvcCND8NoMV~pmXhK6PhALP4RTHF6EiX7sGuNqjvxjVVYmPtutk2X6BaMiK5jSbEx6cETGLTLiyZQCgUfmAWGjSYjpTDchVyEkjxIzU8pqc8DV3buhJIQ1LZLCati0NMGhL71ePWQzsvz5ZyNEgx2RYW66SkHc~Ii2EDtYklNQlX8HDjbIFa4h2mE3puV1fIkNG~tAFBr07OsJ0iOncxCRHjoBiuaXn8I1bTojFFmr9muKTKey~R~42Q__" alt="Zeynab Ishola" class="avatar">
+                <img src="../images/FIRST.jpg">
                 <div class="rating">
                     <span class="star">★</span>
                     <span class="star">★</span>
@@ -173,7 +185,7 @@
             </div>
 
             <div class="review-card">
-                <img src="https://s3-alpha-sig.figma.com/img/518c/5ba4/6ba51595094121c28e81f0ec06b8b941?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AUOEd-QldBGtkWr3F3XwW2wz8WpolTLlgkIgK1hd2whPMD6-xCrnE1EY6oxeaIwsFnR8oR9QHoZGLyM8HJczRY8XWVYn9SdJTrjdjRfdFgNFtcPXGM4G3rQhMq-nqg0qRGJX3o1Lcd~ebVr0p7S-8S6fgUEUzcKEJxvzMp4trc7sQY99TRyPKgQi2kzAfrM7tw2TYOfc65v1Wftm6ybWi64K4V8oPW~d9aSZ0g8jEDeP3KgIa-lnuOIhZuhyfWunahpSRtGa2qAwiggyOuHWgg65EQXWYZj-NJtV82FN6i3n8DFriZZiJU1C1kYHbGed6A2Ya0pULWir7icsyMYa9Q__" alt="Lowell Warris" class="avatar">
+                <img src="../images/SECOND.jpg">
                 <div class="rating">
                     <span class="star">★</span>
                     <span class="star">★</span>
@@ -187,7 +199,7 @@
             </div>
 
             <div class="review-card">
-                <img src="https://s3-alpha-sig.figma.com/img/037d/dc9e/7756ea6d47bb11271b75405d87035f6a?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HyQHabAkQVZDA6efsr1SKj5snviJ7No~gr9oph8SSPkJSGpMbMsw-QontojqOXjQKiNlxTLg8mkQN2nK07bnEVBNQCVF65xNfV3hrssRZYmf3k1PmvZzPi36BmWD9V3i6Rdf7eNxEE-WLi8ShJ6cW9DdOC82lWOm67Vm1YEN55BX~4EONvHHOpv5HSwAiUVGaKsDTKB8sKb~LbPU~Al8d6jmy9Bmnp22qmTIp478I4iw7q9sgdM4Rp4K3nUfaK5xSdwJAjr8mo3GfnYlfbTmw3-RcRy6ium02lrxFCjMgHUGO0JK2DnBCYws2Nbemz9IoCz3c0Gyf6vTgUG9DywJEQ__" alt="Adekumi Omolewa" class="avatar">
+                <img src="../images/LAST.jpg">
                 <div class="rating">
                     <span class="star">★</span>
                     <span class="star">★</span>
@@ -289,8 +301,6 @@
               <a href="#">Terms & Conditions</a>
             </div>
           </div>
-    
-    <script src="about.js"></script>
 </body>
 </html>
 
