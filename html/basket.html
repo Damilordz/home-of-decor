@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0"
+    />
+    <script
+      src="https://kit.fontawesome.com/127922d8a4.js"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home of Decor-basket page</title>
-    <link rel="stylesheet" href="basket.css">
+    <link rel="stylesheet" href="../styles/basket.css">
+    <link rel="stylesheet" href="../styles/components.css">
 </head>
 <body>
        <!-- Header Section -->
-    <header>
+       <header>
         <div class="logo">
-          <a href="#"><img src="../images/Group 189.png" alt="Home of Decor logo" /></a>
+          <a href="../index.html"><img src="../images/logo.svg" alt="Home of Decor logo" /></a>
         </div>
         <div class="nav-menu" id="nav-menu">
           <div class="close-nav" id="close-nav"><i class="fa-solid fa-xmark"></i></div>
           <nav>
             <ul class="nav-links" id="nav-links">
-              <li><a href="#" class="active-menu">Home</a></li>
-              <li><a href="#">Product</a></li>
-              <li><a href="#">Categories</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact us</a></li>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href=".product_page.html">Product</a></li>
+              <li><a href=".about.html">About us</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact-us.html">Contact us</a></li>
             </ul>
           </nav>
           <div class="profile">
             <div class="my-account">
-              <a href="./profile.html">
+              <a href="./html/profile.html">
                 <i class="fa-regular fa-user fa-lg" style="color: #000000"></i>
                 <span>My account</span>
               </a>
@@ -38,12 +50,12 @@
             <div class="cart-section">
               <div class="search"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #000000"></i></div>
               <div class="wish-list"><i class="fa-regular fa-heart fa-lg" style="color: #000000"></i></div>
-              <div class="shopping-cart"><span class="material-symbols-outlined"> shopping_cart </span></div>
+              <div class="shopping-cart"><a href="./basket.html"><span class="material-symbols-outlined"> shopping_cart </span></a></div>
             </div>
           </div>
         </div>
         <div class="nav-bar" id="nav-bar"><i class="fa-solid fa-bars fa-lg"></i></div>
-    </header>
+      </header>
       <!-- first container -->
     <section id="center">
         <!--shopping cart-->

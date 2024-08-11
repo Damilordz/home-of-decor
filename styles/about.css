@@ -1,5 +1,4 @@
 * {
-    font-family: monospace;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,70 +8,6 @@
 }
 html{ font-size: 62.5%;
 }
-/* header section */
-header {
-    max-height: 99px;
-    display: flex;
-    gap: 4rem;
-    align-items: center;
-    padding: 2.8rem 8rem;
-    font-size: 1.8rem;
-    z-index: 5;
-    background-color: #fff;
-  }
-  
-  .nav-bar,
-  .close-nav {
-    display: none;
-  }
-  
-  .logo img {
-    width: 150px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  .nav-menu {
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 2rem;
-  }
-  
-  .nav-links a {
-    color: rgba(51, 51, 51, 0.5);
-  }
-  
-  .active-menu {
-    background-color: #2d5356;
-    color: #fff !important;
-    padding: 0.5rem 1rem;
-  }
-  
-  .profile {
-    display: flex;
-    gap: 2rem;
-  }
-  
-  .profile > div {
-    cursor: pointer;
-  }
-  
-  .cart-section {
-    display: flex;
-    gap: 1.5rem;
-  }
   
 .hero {
     background-image: url('../images/BLOG1.jpg');
