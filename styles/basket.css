@@ -1,164 +1,3 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    outline: none;
-    text-decoration: none;
-    font-family: sans-serif;
-
-}
-#center{
-    background-image: url(images/Top\ view\ black\ friday\ sales\ assortment\ with\ copy\ space.png);
-    background-repeat: no-repeat;
-    height: 400px;
-    text-align: center;
-    color: white;
-}
-#center h3{
-    padding-top: 200px;
-    font-size: 28px;
-}
-
-.checkout{
-    background-color:#ffff;
-    display: grid;
-    grid-template-columns: 65% 30%;
-    grid-template-rows: 500px;
-}
-
-#div1{
-    /* background-color: black; */
-    grid-template-columns: 1/2;
-    grid-template-rows: 1;
-}
-
-#div2{
-    /* background-color: red; */
-    grid-template-columns: 1/2;
-    grid-template-rows: 1;
-    margin-top: 80px;
-}
-
-#form{
-    margin-left: 50px;
-    margin-right: 200px;
-    margin-top: 50px;
-     height: 300px;
-    /* background-color: blue; */
-}
-#h1{
-    padding-bottom: 20px;
-    font-size: 35px;
-}
-#input{
-    padding: 15px;
-    padding-right: 50px;
-    margin-bottom: 20px;
-    margin-right: 100px;
-    margin-top: 8px;
-}
-#input ::placeholder{
-    font-weight: bold;
-    font-size: 30px;
-}
-#input1{
-    padding: 15px;
-    padding-right: 430px;
-    margin-bottom: 20px;
-    margin-right: 100px;
-    margin-top: 8px;
-}
-.upper{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50%;
-}
-.p b{
-    color: red;
-    font-weight: lighter;
-    font-size: 15px;
-    padding-left: 70px;
-}
-.p1 b{
-    padding-left: 450px;
-    color: red;
-    font-weight: lighter;
-    font-size: 15px;
-}
-#check{
-    height: 300px;
-    width: 100%;   
-}
-#sum{
-    padding: 1.25rem;
-    padding-right: 3.75rem;
-    background-color:#2D5356;
-    border-radius: 8px;
-    font-size: 21px;
-    color: white;
-}
-#sub{
-    padding-top: 20px;
-    font-size: 21px;
-}
-
-#sub b{
-    font-weight: bold;
-    padding-left: 80px;
-    font-size: 21px;
-}
-
-#bod{
-    border-left:solid 1px;
-    border-right:solid 1px;
-    border-bottom:solid 1px;
-    border-color: black;
-    padding-left: 20px;
-    height: 300px;
-}
-#total{
-    padding-top: 80px;
-    font-size: 21px;
-}
-#total b{
-    font-weight: bold;
-    padding-left: 120px;
-    font-size: 21px;
-}
-#so{
-    display: grid;
-    grid-template-columns: 48% 35%;
-    grid-gap: 15px;
-}
-button{
-    margin-top: 30px;
-    padding: 10px;
-    border-radius: 20px;
-    background-color: #2D5356;
-    color: white;
-}
-
-.payment{
-    height: 300px;
-    margin-top: 200px;
-    margin-left: 50px;
-    font-size: 21px;
-}
-.payment h3{
-    padding-bottom: 15px;
-}
-#card{
-    display: grid;
-    width: 30%;
-    grid-template-columns: 40% 20%;
-    padding-bottom: 20px;
-}
-.lower{
-    display: grid;
-    grid-template-columns: 40% 40%;
-    grid-template-rows: 50%;
-    margin-left: 50px;
-}
 html {
     font-size: 62.5%;
   }
@@ -271,9 +110,140 @@ html {
     display: flex;
     gap: 1.5rem;
   }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: sans-serif;
+
+}
+#center{
+    background-image: url(images/shopping.png);
+    background-repeat: no-repeat;
+    height: 500px;
+    text-align: center;
+    width: 100%;
+
+}
+#center h3{
+    padding-top: 200px;
+    font-size: 28px;
+}
+
+/* Second section////////////// */
+ 
+#cat{
+    margin-right: 250px;
+    margin-left: 250px;
+     display: grid;
+     grid-template-columns: 30% 25% 20% 25%;
+     background-color: #2D5356;
+     padding: 20px;
+     border-radius: 20px;
+     color: white;
+}
+#goat{
+    border-left:solid 1px;
+    border-right:solid 1px;
+    border-bottom:solid 1px;
+    border-color: black;
+    height: 200px;
+    margin-right: 250px;
+    margin-left: 250px;
+    padding-top: 30px;
+}
+#rat{
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 30% 25% 20% 25%;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+#rat1 img{
+     height: 25px;
+     width: 25px;
+}
+#but{
+    padding: 5px;
+    border-radius: 20px;
+}
+/* #tr1{
+    background-color: #2D5356;
+    border-collapse: collapse;
+}
+
+td, th {
+    /* border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+} */
   
-  /* Features section */
-  .features {
+
+
+
+/* third section//////// */
+#pub{
+    display: grid;
+    grid-template-columns: 30% 40% 20%;
+    margin-top: 40px;
+}
+#sum{
+    padding: 20px;
+    padding-right: 60px;
+    background-color:#2D5356;
+    border-radius: 8px;
+    font-size: 21px;
+    color: white;
+}
+#sub{
+    padding-top: 20px;
+    font-size: 21px;
+}
+
+#sub b{
+    font-weight: bold;
+    padding-left: 250px;
+    font-size: 21px;
+}
+
+#bod{
+    border-left:solid 1px;
+    border-right:solid 1px;
+    border-bottom:solid 1px;
+    border-color: black;
+    padding-left: 20px;
+    height: 350px;
+}
+#total{
+    padding-top: 80px;
+    font-size: 21px;
+}
+#total b{
+    font-weight: bold;
+    padding-left: 250px;
+    font-size: 21px;
+}
+#so{
+    display: grid;
+    grid-template-columns: 48% 35%;
+    grid-gap: 15px;
+}
+#butt{
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 40px;
+    background-color: #2D5356;
+    width: 100%;
+    color: white;
+    margin-left: 120px;
+}
+
+
+
+/* Features section */
+.features {
     display: flex;
     gap: 2.5rem;
     justify-content: center;
@@ -352,7 +322,11 @@ html {
   .footer-contact .fa-location-dot {
     margin-right: 0.5rem;
   }
-  /* Media Query */
+
+
+
+
+  /* Media Query //////////////////*/
 @media (width > 991px) and (max-width: 1200px) {
     header {
       padding: 2rem;
