@@ -86,6 +86,7 @@ profileRef.addEventListener("click", () => {
   window.location.href = "../html/profile.html";
 });
 
+
 // hoverable section (homepage)
   const hoverSections = [
     { section: ".luxury-1a", overlay: ".luxury-1a-over" },

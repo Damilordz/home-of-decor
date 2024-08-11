@@ -285,7 +285,7 @@ section.landingpage{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background */
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 1.6rem;
 }
 /* features display section */
@@ -339,27 +339,75 @@ ul.sample-rooms{
     flex-basis: 1rem;
 }
 /*trending images  */
+.trending-products{
+    position: relative;
+    margin-bottom: 16%;
+}
+.trending-products-container{
+    display: flex;
+    gap: 2rem;
+}
 .trending-flex{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
 }
+
 .trending-products-class{
-    border:1px solid black;
     position: relative;
+}
+.margin-top{
+    margin-top: 8rem;
 }
 .room-text{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 0 2rem 0;
+    width: 100%;
     font-weight: 600;
     color: var(--BLACK-TEXT);
+    border: 1px solid var(--FLAT-BLACK);
+    position: absolute;
+    top: 97.8%;
+    border-top: none;
 }
-.trending-products-class-all img
-{
+
+.room-text:hover{
+    color: var(--WHITE);
+    background: var(--GREEN);
+}
+
+.trending-products-class-all img{
     width: 100%;
 }
+
+.heart-cart i{
+    padding: 1rem;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.heart-cart-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.heart-cart{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 97.8%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
 .wallace-one{
     flex-basis: 30rem;
     flex-grow: 1;
@@ -532,7 +580,6 @@ ul.sample-rooms{
 }
 .client-comment-container{
     display: flex;
-    /* flex-wrap: wrap; */
     gap: 2rem;
 }
 .client-comment-1{
@@ -548,6 +595,7 @@ ul.sample-rooms{
 .star{
     display: flex;
 }
+
 .client-pad{
     display: flex;
     flex-direction: column;
@@ -561,7 +609,8 @@ ul.sample-rooms{
 }
 .client-name{
     display: flex;
-    justify-content: space-between;
+    font-size: 1.3rem;
+    gap: 10rem;
 }
 .teacher-student{
     color: var(--GREY-DARK);
@@ -582,7 +631,7 @@ ul.sample-rooms{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:  1.2rem 3rem;
+    padding:  1.4rem 3rem;
     background: var(--GREY);
     border-radius: 1rem;
 }
@@ -592,7 +641,55 @@ ul.sample-rooms{
     cursor: pointer;
 }
 /* to be displayed when the FAQ is clicked */
-.java-hide{
+.comment-display {
+    display: none; 
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out; 
+}
+
+.comment-display-content{
+    display: flex;
+    justify-content: space-between;
+}
+/* .comment-display {
+    display: flex;
+    justify-content: space-between;
+    display: none; 
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; 
+} */
+
+.comment-display.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.client-comment--display {
+    background: var(--GREEN);
+    border-radius: 1.6rem;
+    color: var(--GREY);
+    padding: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.7;
+}
+
+.coment-add {
+    padding: 0 20rem 12rem 0;
+}
+
+.comment-link-sub {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.comment-link-sub img, .comment-display img{
+    cursor: pointer;
+}
+/* .java-hide{
     display: none;
 }
 .client-comment--display{
@@ -601,6 +698,10 @@ ul.sample-rooms{
     color: var(--GREY);
     padding: 2rem;
     font-size: 1.8rem;
+    line-height: 1.7;
+}
+.coment-add{
+    padding: 0 20rem 12rem 0;
 }
 .comment-display{
     display: flex;
@@ -608,7 +709,7 @@ ul.sample-rooms{
 }
 .comment-display img{
     cursor: pointer;
-}
+} */
 /* blog section */
 .blog-text{
     display: flex;
@@ -665,13 +766,17 @@ ul.sample-rooms{
     font-size: 1.8rem;
     width: 50%;
 }
-.image-content-1{
+/* .image-content-1{
     height: 62%;
     width: 34%;
-}
-.image-content-1 img{
+} */
+.image-content-1{
     position: relative;
     width: 100%;
+}
+.image-content-1 img{
+    width: 100%;
+    height: 100%;
 }
 .image-container{
     display: flex;
@@ -680,8 +785,8 @@ ul.sample-rooms{
 /* hover background */
 .creator-sub{
     background: rgba(0, 0, 0, 0.856);
-    top: 18rem;
-    height: 73.9%;
+    top: 0;
+    height: 100%;
     width: 28vw;
     position: absolute;
     display: flex;
@@ -838,7 +943,289 @@ footer {
   
 
 /* media screns */
-@media (min-width: 320px) and (max-width: 820px){
+@media (max-width: 820px){
+    html {
+        font-size: 50%;
+        overflow-x: hidden;
+      }
+        section.landingpage{
+            display: grid;
+            grid-template-columns: repeat(1fr, 12);
+            gap: 2rem;
+            position: relative;
+            /* margin: 100%; */
+        }
+        
+        .overlay{
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            height: 99%;
+            width: 99.5%;
+            border-radius: 4.5rem;
+        }
+
+        .write-up-content {
+            grid-column: 1 / -1;
+            gap: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            z-index: 1;
+            color: white;
+            display: flex;
+        }
+    
+        .view-details a{
+            color: var(--WHITE);
+            border-bottom: 1px solid var(--WHITE);
+        }
+
+        .modern-design {
+            margin: 12rem 4.5rem 1rem 0;
+            font-size: 5rem;
+            line-height: 1.2;
+            text-align: center;
+            color: var(--WHITE);
+        }
+    
+        .paragraph-text {
+            font-size: 2.2rem;
+            text-align: center;
+            padding: 0 1rem;
+            margin-top: 4rem;
+        }
+    
+        .link-buttons {
+            justify-content: center;
+            gap: 5rem;
+            margin: 10rem 0 0 0;
+        }
+    
+        .shop-now a, .view-details a {
+            padding: 1.5rem 1rem;
+        }
+    
+        .fig-div {
+            justify-content: center;
+            gap: 6rem;
+            font-size: 2rem;
+            margin: 15rem 2rem 0 0;
+        }
+    
+        .hero-numbers {
+            font-size: 2rem;
+        }
+    
+        .fig-sub-container {
+            border: none;
+            text-align: center;
+        }
+    
+        .sitting, .dinning, .bedroom {
+            grid-column: 1 / -1;
+        }
+    
+        .sitting img {
+            width: 100%;
+        }
+
+        .dinning{
+            display: none;
+        }
+        .bedroom{
+            display: none;
+        }
+    
+    /* the small link section */
+    .small-link{
+        margin: 0.8rem 0 0 0;
+    }
+
+    /* features display section */
+    .feature-categories{
+        margin: 0 0 8 8%;
+    }
+    .categories-class-container{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .categories-class{
+        height: 100%;
+    }
+
+    .categories-class img{
+        width: 80%;
+    }
+    .categories-media{
+        gap: 2rem;
+    }
+
+    /* hoverable section */
+    .new-luxury{
+        margin: 0 5% 8rem 5%;
+    }
+
+    .luxury-display{
+        flex-direction: column;
+    }
+
+    .luxury-1{
+        width: 100%;
+    }
+
+    .luxury-1a{
+        width: 100%;
+    }
+
+    .luxury-1a-sub,
+    .textile-sub,
+    .table-sub{
+        gap: 26rem;
+    }
+    .luxury-1a-sub{
+        gap: 65rem;
+    }
+
+    /* trending products */
+    .trending-products{
+        margin: 0 5%  0 5%; 
+    }
+
+    .trending-products-container{
+        margin-bottom: 20%;
+    }
+
+    .margin-top-2{
+        margin-top: 8rem;
+    }
+   
+    /* super sale */
+    .super-sale{
+        margin: 8rem 5% 0 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .super-sale-container{
+        width: 100%;
+        height: 60vh;
+    }
+
+    .super-sale-container2{
+        width: 100%;
+    }
+
+/*  online deals section*/
+    .online-deals{
+        margin: 9rem 5% 0 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .online-deals-1,
+    .online-deals-2{
+        width: 100%;
+        height: 65vh;
+    }
+
+    /* testimonial section */
+    .client-page,
+    .question-answer,
+    .blog-section,
+    .creator-section{
+        margin: 10rem 5% 0 5%;
+    }
+
+    .client-comment-container{
+        flex-direction: column;
+    }
+ 
+    /* blog section */
+    .blog-images{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    /* creator-section */
+    .creator-section-p{
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .creator-section-1{
+        align-items: center;
+    }
+
+    /* patnership */
+    .trusted-section-icons{
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    
+/* subcsription section*/
+    .grey-border{
+        margin: 8rem 5% 0 5%;
+    }   
+
+    .border-padd{
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .sucbscribe-text{
+        width: 100%;
+        font-size: 2.5rem;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .sucbscribe-text-sub3{
+        gap: 4rem;
+       gap: 4rem;
+        line-height: 1.8;
+        width: 30rem;
+    }
+
+    .sucbscribe-image{
+        height: 50vh;
+        width: 100%;
+    }
+
+    .sub a{
+        padding: 0.4rem 1.5rem;
+        margin-top: 0.4.5rem;
+    }
+
+/* final section before the footer */
+    .join-contact{
+        margin: 8rem 5% 8rem 5%;
+    }
+}
+
+@media (max-width: 390px){
+    .luxury-1a-sub,
+    .textile-sub,
+    .table-sub{
+    display: flex;
+    flex-direction: column;
+    gap: 30rem;
+    justify-content: space-between;
+    padding: 3rem;
+    color: var(--WHITE);
+}
+
+.luxury-1a-sub{
+    gap: 60rem;
+}
+
+}
+
+@media (min-width: 320px) and (max-width: 430px){
     html {
         font-size: 50%;
         overflow-x: hidden;
@@ -879,7 +1266,7 @@ footer {
             font-size: 3rem;
             line-height: 1.2;
             text-align: center;
-            color: var(--BLACK);
+            color: var(--WHITE);
         }
     
         .paragraph-text {
@@ -892,15 +1279,17 @@ footer {
         .link-buttons {
             align-items: center;
             gap: 2rem;
-            margin: 0.8rem 0 0 2rem;
+            margin: 3rem 3rem 0 2rem;
         }
     
         .shop-now a, .view-details a {
-            padding: 0.5rem 1rem;
+            padding: 1rem 1rem;
         }
     
         .fig-div {
             margin: 6rem 4rem 0 0;
+            gap: 6rem;
+            font-size: 1.5rem;
         }
     
         .hero-numbers {
@@ -929,13 +1318,12 @@ footer {
     
     /* the small link section */
     .small-link{
-        padding: 0.8rem 1rem 0 0;
+        padding: 0.8rem 5% 0 0;
     }
 
     /* features display section */
     .feature-categories{
-        margin: 0 0 8
-        rem 8%;
+        margin: 0 0 8rem 8%;
     }
     .categories-class-container{
         display: flex;
@@ -970,6 +1358,15 @@ footer {
 
     .luxury-1a{
         width: 100%;
+    }
+
+    .luxury-1a-sub,
+    .textile-sub,
+    .table-sub{
+        gap: 20rem;
+    }
+    .luxury-1a-sub{
+        gap: 52rem;
     }
 
     /* trending products */
@@ -1083,12 +1480,3 @@ footer {
     }
 }
 
-/* @media (min-width: 820px){
-    html {
-        font-size: 100%;
-        overflow-x: hidden;
-      }
-        .overlay{
-            border-radius: 1.8rem;
-        }
-} */

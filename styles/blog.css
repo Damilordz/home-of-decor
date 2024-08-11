@@ -76,7 +76,7 @@ header {
   }
   
 .hero {
-    background-image: url('https://s3-alpha-sig.figma.com/img/9e28/99dd/0635f6c3f585b3cedee9a45aa1be0e9f?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=haRPNurTQqoBDYQD5CYyg2Qw65iXErSoLDAEp8hsKs9DNsDdsWnW1W4mhy39qHPWNkFlsnAAksaJz5CNR0lhQY0ufHB9ED90DbuMwUnnvXxDwXA13HvbLhq4wr-V0GPy5FM~RsqSZ6opiIc1FbZ7c72tvb8i5gyUB15L7egivj2b-VIFCY0~BjEkx9yRLUJd6VjzsDdz6gCIotPOWGKAD9Wiiqi2XUS~ge~xfnjQdEsAN1P8h7QE-sHCmi4-F~n~NpIMjjwKShoAreHtgCO5Vyt2VuTBDofbcYiXG0bXWIL023LgDMScrcJI54XpeHCqnyrTGnu-TYOYVnfaT4~e2A__');
+    background-image: url('../images/BLOG1.jpg');
     background-size: cover;
     background-position: center;
     height: 483px;
@@ -94,8 +94,7 @@ header {
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    line-height: 1.5rem;
+    gap: 2rem;
     padding-left: 5.5rem;
 }
 .aside h1 {
@@ -103,22 +102,31 @@ header {
 }
 .aside p{
     color: #333;
+    font-size: 14px;
 }
 .image {
     display: flex;
     justify-content: space-around;
     padding: 2rem;
 }
+.image p{
+  text-align: center;
+}
 .image-1 img {
     height: 404.11px;
     width: 559.71px;
     border-radius: 17.03px;
 }
-
+.image-1 p{
+  text-align: center;
+}
 .image-2 img {
     height: 404.11px;
     width: 559.71px;
     border-radius: 17.03px;
+}
+.image-2 p{
+  text-align: center;
 }
 .image-4 {
     display: flex;
@@ -130,10 +138,16 @@ header {
     width: 559.71px;
     border-radius: 17.03px;
 }
+.image-4b p{
+  text-align: center;
+}
 .image-5 img {
     height: 404.11px;
     width: 559.71px;
     border-radius: 17.03px;
+}
+.image-5 p{
+  text-align: center;
 }
 .image-6 {
     display: flex;
@@ -145,12 +159,17 @@ header {
     width: 559.71px;
     border-radius: 17.03px;
 }
+.image-6b p{
+  text-align: center;
+}
 .image-7 img {
     height: 404.11px;
     width: 559.71px;
     border-radius: 17.03px;
 }
-
+.image-7 p{
+  text-align: center;
+}
 .image-8 {
     display: flex;
     justify-content: space-around;
@@ -161,10 +180,16 @@ header {
     width: 559.71px;
     border-radius: 17.03px;
 }
+.image-8b p{
+  text-align: center;
+}
 .image-9 img {
     height: 404.11px;
     width: 559.71px;
     border-radius: 17.03px;
+}
+.image-9 p{
+  text-align: center;
 }
 
 .image-9b {
@@ -177,14 +202,17 @@ header {
     width: 559.71px;
     border-radius: 17.03px;
 }
+.image-9c p{
+  text-align: center;
+}
 .image-9d img {
     height: 404.11px;
     width: 559.71px;
     border-radius: 17.03px;
 }
-
-
-
+.image-9d p{
+  text-align: center;
+}
 
 .container {
     max-width: 800px;
@@ -301,6 +329,7 @@ header {
 .share-story {
     background-color: white;
     color: #2c5b5c;
+    font-size: 12px;
     line-height: 2rem;
 }
 
@@ -350,8 +379,8 @@ header {
 }
 .fa-headset {
     color: #fff;
-    padding-top: 1.2rem;
-    padding-left: 1.2rem;
+    padding-top: 1.9rem;
+    padding-left: 1.6rem;
     width: 50px;
     height: 50px;
     background-color: #2f4f4f;
@@ -385,7 +414,8 @@ h3 {
 footer {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    padding-top: 5rem;
+    gap: 5rem;
     line-height: 2;
   }
   
@@ -409,7 +439,9 @@ footer {
   .footer-logo img {
     width: 176px;
   }
-  
+  .footer-section {
+    font-size: 13px;
+  }
   .footer-bottom {
     padding: 0 8rem;
     display: flex;
@@ -501,7 +533,6 @@ footer {
     .profile {
       flex-direction: column;
     }
-  
     .cart-section {
       justify-content: center;
     }
@@ -558,4 +589,299 @@ footer {
       align-items: center;
     }
   }
-  
+  /* Mobile and extra small screens */
+@media (max-width: 480px) {
+  header {
+      padding: 1rem;
+      font-size: 1.4rem;
+  }
+
+  .logo img {
+      width: 120px;
+  }
+
+  .nav-links {
+      gap: 0.5rem;
+  }
+
+  .nav-links a {
+      font-size: 3vw;
+  }
+
+  .profile {
+      flex-direction: column;
+      gap: 1rem;
+  }
+
+  .cart-section {
+      gap: 1rem;
+  }
+
+  .hero {
+      height: 300px;
+  }
+
+  .hero h1 {
+      font-size: 2rem;
+  }
+
+  .content {
+      padding: 1rem;
+      gap: 2rem;
+  }
+
+  .card {
+      padding: 10px;
+  }
+
+  .join-community {
+      max-width: 300px;
+      padding: 1rem;
+  }
+
+  .join-community h2 {
+      font-size: 1.2rem;
+  }
+
+  .join-community p {
+      font-size: 0.8rem;
+  }
+
+  .social-icons img {
+      width: 20px;
+      height: 20px;
+  }
+
+  .btn-join {
+      padding: 8px 16px;
+  }
+
+  .share-story {
+      font-size: 10px;
+  }
+
+  .feature-container {
+      flex-direction: column;
+      gap: 1rem;
+      margin-left: 0;
+  }
+
+  .feature-box {
+      width: 150px;
+      height: 150px;
+  }
+
+  .pagination a {
+      padding: 3px 7px;
+  }
+
+  footer {
+      padding: 2rem;
+  }
+
+  .footer-container {
+      padding: 1rem;
+  }
+
+  .footer-logo img {
+      width: 120px;
+  }
+}
+
+/* Tablet and small screens */
+@media (max-width: 768px) {
+  header {
+      padding: 1.5rem;
+      font-size: 1.6rem;
+  }
+
+  .logo img {
+      width: 130px;
+  }
+
+  .nav-links {
+      gap: 1rem;
+  }
+
+  .nav-links a {
+      font-size: 4vw;
+  }
+
+  .profile {
+      flex-direction: column;
+      gap: 1.5rem;
+  }
+
+  .cart-section {
+      gap: 1.5rem;
+  }
+
+  .hero {
+      height: 400px;
+  }
+
+  .hero h1 {
+      font-size: 2.5rem;
+  }
+
+  .content {
+      padding: 1.5rem;
+      gap: 3rem;
+  }
+
+  .card {
+      padding: 15px;
+  }
+
+  .join-community {
+      max-width: 350px;
+      padding: 1.5rem;
+  }
+
+  .join-community h2 {
+      font-size: 1.3rem;
+  }
+
+  .join-community p {
+      font-size: 0.9rem;
+  }
+
+  .social-icons img {
+      width: 22px;
+      height: 22px;
+  }
+
+  .btn-join {
+      padding: 9px 18px;
+  }
+
+  .share-story {
+      font-size: 11px;
+  }
+
+  .feature-container {
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-left: 0;
+  }
+
+  .feature-box {
+      width: 180px;
+      height: 180px;
+  }
+
+  .pagination a {
+      padding: 4px 8px;
+  }
+
+  footer {
+      padding: 3rem;
+  }
+
+  .footer-container {
+      padding: 2rem;
+  }
+
+  .footer-logo img {
+      width: 150px;
+  }
+}
+
+/* Tablet/iPad */
+@media (max-width: 991px) {
+  header {
+      padding: 2rem;
+      font-size: 1.6rem;
+  }
+
+  .logo img {
+      width: 140px;
+  }
+
+  .nav-links {
+      gap: 1.5rem;
+  }
+
+  .nav-links a {
+      font-size: 4vw;
+  }
+
+  .profile {
+      flex-direction: column;
+      gap: 1.5rem;
+  }
+
+  .cart-section {
+      gap: 1.5rem;
+  }
+
+  .hero {
+      height: 450px;
+  }
+
+  .hero h1 {
+      font-size: 2.8rem;
+  }
+
+  .content {
+      padding: 2rem;
+      gap: 3rem;
+  }
+
+  .card {
+      padding: 15px;
+  }
+
+  .join-community {
+      max-width: 380px;
+      padding: 1.5rem;
+  }
+
+  .join-community h2 {
+      font-size: 1.4rem;
+  }
+
+  .join-community p {
+      font-size: 1rem;
+  }
+
+  .social-icons img {
+      width: 24px;
+      height: 24px;
+  }
+
+  .btn-join {
+      padding: 10px 20px;
+  }
+
+  .share-story {
+      font-size: 12px;
+  }
+
+  .feature-container {
+      flex-direction: row;
+      gap: 1.5rem;
+      margin-left: 0;
+  }
+
+  .feature-box {
+      width: 200px;
+      height: 200px;
+  }
+
+  .pagination a {
+      padding: 5px 10px;
+  }
+
+  footer {
+      padding: 4rem;
+  }
+
+  .footer-container {
+      padding: 3rem;
+  }
+
+  .footer-logo img {
+      width: 160px;
+  }
+}
