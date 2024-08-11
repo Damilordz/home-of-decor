@@ -415,3 +415,147 @@ h3 {
 .say h2 {
     color: #2f4f4f;
 }
+
+@media screen and (max-width: 1024px) {
+    header {
+      padding: 2rem 4rem;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      position: fixed;
+      left: -100%;
+      top: 99px;
+      gap: 0;
+      background-color: #fff;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+    }
+  
+    .nav-bar {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .nav-bar.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .nav-bar.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .nav-bar.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .nav-menu.active {
+      left: 0;
+    }
+  
+    .close-nav {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  
+    .feature-container {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: 0;
+    }
+  
+    .feature-box {
+      width: 45%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 1.5rem 2rem;
+    }
+  
+    .logo img {
+      width: 120px;
+    }
+  
+    .hero {
+      height: 350px;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .content h2 {
+      font-size: 2.5rem;
+    }
+  
+    .new img {
+      width: 100%;
+      height: auto;
+      padding-left: 0;
+    }
+  
+    .new-2, .new-5, .new-7, .new-9b, .new-9e {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .new-3 img, .new-6b img, .new-8 img, .new-9d img, .new-9f img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .reviews {
+      flex-direction: column;
+    }
+  
+    .feature-box {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    header {
+      padding: 1rem;
+    }
+  
+    .logo img {
+      width: 100px;
+    }
+  
+    .hero {
+      height: 250px;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .content h2 {
+      font-size: 2rem;
+    }
+  
+    .new-1 h1 {
+      font-size: 2.5rem;
+    }
+  
+    .container-1 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .member {
+      width: 80%;
+    }
+  }
