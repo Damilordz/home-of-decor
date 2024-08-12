@@ -454,7 +454,106 @@ footer {
   .footer-contact .fa-location-dot {
     margin-right: 0.5rem;
   }
+  @media screen and (min-width: 360px) and (max-width: 800px) {
+    .hero {
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+    }
   
+    .hero h1 {
+      font-size: 2.4rem;
+      text-align: center;
+      padding: 0 1rem;
+    }
+  
+    .aside {
+      padding: 2rem 1.5rem;
+    }
+  
+    .aside h1 {
+      font-size: 2.2rem;
+    }
+  
+    .image, .image-4, .image-6, .image-8, .image-9b {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .image-1 img, .image-2 img, .image-4b img, .image-5 img, 
+    .image-6b img, .image-7 img, .image-8b img, .image-9 img, 
+    .image-9c img, .image-9d img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  
+    .container {
+      padding-top: 2rem;
+      padding: 0 1.5rem;
+    }
+  
+    .pagination {
+      margin-bottom: 2rem;
+    }
+  
+    .pagination a {
+      padding: 3px 8px;
+    }
+  
+    .content {
+      flex-direction: column;
+      padding-top: 2rem;
+      gap: 2rem;
+    }
+  
+    .card {
+      padding: 1.5rem;
+    }
+  
+    .join-community {
+      max-width: 100%;
+    }
+  
+    .feature-container {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+      padding-top: 2rem;
+    }
+  
+    .feature-box {
+      width: 90%;
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 1.5rem;
+    }
+  
+    footer {
+      padding-top: 2rem;
+      gap: 2rem;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      padding: 0 1.5rem;
+    }
+  
+    .footer-logo {
+      padding: 2rem 1rem;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 1.5rem;
+      text-align: center;
+    }
+  
+    .footer-contact {
+      margin-top: 1rem;
+    }
+  }
   /* Media Query */
   @media (width > 991px) and (max-width: 1200px) {
     header {
@@ -588,300 +687,4 @@ footer {
       padding: 2rem;
       align-items: center;
     }
-  }
-  /* Mobile and extra small screens */
-@media (max-width: 480px) {
-  header {
-      padding: 1rem;
-      font-size: 1.4rem;
-  }
-
-  .logo img {
-      width: 120px;
-  }
-
-  .nav-links {
-      gap: 0.5rem;
-  }
-
-  .nav-links a {
-      font-size: 3vw;
-  }
-
-  .profile {
-      flex-direction: column;
-      gap: 1rem;
-  }
-
-  .cart-section {
-      gap: 1rem;
-  }
-
-  .hero {
-      height: 300px;
-  }
-
-  .hero h1 {
-      font-size: 2rem;
-  }
-
-  .content {
-      padding: 1rem;
-      gap: 2rem;
-  }
-
-  .card {
-      padding: 10px;
-  }
-
-  .join-community {
-      max-width: 300px;
-      padding: 1rem;
-  }
-
-  .join-community h2 {
-      font-size: 1.2rem;
-  }
-
-  .join-community p {
-      font-size: 0.8rem;
-  }
-
-  .social-icons img {
-      width: 20px;
-      height: 20px;
-  }
-
-  .btn-join {
-      padding: 8px 16px;
-  }
-
-  .share-story {
-      font-size: 10px;
-  }
-
-  .feature-container {
-      flex-direction: column;
-      gap: 1rem;
-      margin-left: 0;
-  }
-
-  .feature-box {
-      width: 150px;
-      height: 150px;
-  }
-
-  .pagination a {
-      padding: 3px 7px;
-  }
-
-  footer {
-      padding: 2rem;
-  }
-
-  .footer-container {
-      padding: 1rem;
-  }
-
-  .footer-logo img {
-      width: 120px;
-  }
-}
-
-/* Tablet and small screens */
-@media (max-width: 768px) {
-  header {
-      padding: 1.5rem;
-      font-size: 1.6rem;
-  }
-
-  .logo img {
-      width: 130px;
-  }
-
-  .nav-links {
-      gap: 1rem;
-  }
-
-  .nav-links a {
-      font-size: 4vw;
-  }
-
-  .profile {
-      flex-direction: column;
-      gap: 1.5rem;
-  }
-
-  .cart-section {
-      gap: 1.5rem;
-  }
-
-  .hero {
-      height: 400px;
-  }
-
-  .hero h1 {
-      font-size: 2.5rem;
-  }
-
-  .content {
-      padding: 1.5rem;
-      gap: 3rem;
-  }
-
-  .card {
-      padding: 15px;
-  }
-
-  .join-community {
-      max-width: 350px;
-      padding: 1.5rem;
-  }
-
-  .join-community h2 {
-      font-size: 1.3rem;
-  }
-
-  .join-community p {
-      font-size: 0.9rem;
-  }
-
-  .social-icons img {
-      width: 22px;
-      height: 22px;
-  }
-
-  .btn-join {
-      padding: 9px 18px;
-  }
-
-  .share-story {
-      font-size: 11px;
-  }
-
-  .feature-container {
-      flex-direction: column;
-      gap: 1.5rem;
-      margin-left: 0;
-  }
-
-  .feature-box {
-      width: 180px;
-      height: 180px;
-  }
-
-  .pagination a {
-      padding: 4px 8px;
-  }
-
-  footer {
-      padding: 3rem;
-  }
-
-  .footer-container {
-      padding: 2rem;
-  }
-
-  .footer-logo img {
-      width: 150px;
-  }
-}
-
-/* Tablet/iPad */
-@media (max-width: 991px) {
-  header {
-      padding: 2rem;
-      font-size: 1.6rem;
-  }
-
-  .logo img {
-      width: 140px;
-  }
-
-  .nav-links {
-      gap: 1.5rem;
-  }
-
-  .nav-links a {
-      font-size: 4vw;
-  }
-
-  .profile {
-      flex-direction: column;
-      gap: 1.5rem;
-  }
-
-  .cart-section {
-      gap: 1.5rem;
-  }
-
-  .hero {
-      height: 450px;
-  }
-
-  .hero h1 {
-      font-size: 2.8rem;
-  }
-
-  .content {
-      padding: 2rem;
-      gap: 3rem;
-  }
-
-  .card {
-      padding: 15px;
-  }
-
-  .join-community {
-      max-width: 380px;
-      padding: 1.5rem;
-  }
-
-  .join-community h2 {
-      font-size: 1.4rem;
-  }
-
-  .join-community p {
-      font-size: 1rem;
-  }
-
-  .social-icons img {
-      width: 24px;
-      height: 24px;
-  }
-
-  .btn-join {
-      padding: 10px 20px;
-  }
-
-  .share-story {
-      font-size: 12px;
-  }
-
-  .feature-container {
-      flex-direction: row;
-      gap: 1.5rem;
-      margin-left: 0;
-  }
-
-  .feature-box {
-      width: 200px;
-      height: 200px;
-  }
-
-  .pagination a {
-      padding: 5px 10px;
-  }
-
-  footer {
-      padding: 4rem;
-  }
-
-  .footer-container {
-      padding: 3rem;
-  }
-
-  .footer-logo img {
-      width: 160px;
-  }
 }
