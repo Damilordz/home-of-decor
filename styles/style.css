@@ -37,20 +37,7 @@ section.landingpage{
     /* position: relative; */
     margin: 0 7rem 0 2.5rem;
 }
-/* for small screen, here it is set to none */
-.overlay{
-    /* display: grid;
-    grid-template-columns: repeat(1fr, 12);
-    gap: 2rem; */
-    /* position: absolute; */
-    /* z-index: 1; */
-    /* margin: 0 7rem 0 2.5rem; */
-    background: white
-    /* 
-    width: 100vw;
-    position: absolute;
-    top: 0; */
-}
+
 /* continued hero section */
 .write-up-content{
     grid-column: 1/6;
@@ -942,99 +929,63 @@ footer {
   }
   
 
-/* media screns */
+/* media screens */
 @media (max-width: 820px){
     html {
-        font-size: 50%;
+        font-size: 70%;
         overflow-x: hidden;
       }
-        section.landingpage{
-            display: grid;
-            grid-template-columns: repeat(1fr, 12);
-            gap: 2rem;
-            position: relative;
-            /* margin: 100%; */
-        }
-        
-        .overlay{
-            background: rgba(0, 0, 0, 0.5);
-            position: absolute;
-            height: 99%;
-            width: 99.5%;
-            border-radius: 4.5rem;
-        }
 
-        .write-up-content {
-            grid-column: 1 / -1;
-            gap: 1rem;
-            padding-left: 1rem;
-            padding-right: 1rem;
-            z-index: 1;
-            color: white;
-            display: flex;
-        }
-    
-        .view-details a{
-            color: var(--WHITE);
-            border-bottom: 1px solid var(--WHITE);
-        }
+      section.landingpage{
+        display: grid;
+        grid-template-columns: repeat(1fr, 12);
+        gap: 3rem;
+        margin: 5% 5% 0 5%;
+    }
 
-        .modern-design {
-            margin: 12rem 4.5rem 1rem 0;
-            font-size: 5rem;
-            line-height: 1.2;
-            text-align: center;
-            color: var(--WHITE);
-        }
-    
-        .paragraph-text {
-            font-size: 2.2rem;
-            text-align: center;
-            padding: 0 1rem;
-            margin-top: 4rem;
-        }
-    
-        .link-buttons {
-            justify-content: center;
-            gap: 5rem;
-            margin: 10rem 0 0 0;
-        }
-    
-        .shop-now a, .view-details a {
-            padding: 1.5rem 1rem;
-        }
-    
-        .fig-div {
-            justify-content: center;
-            gap: 6rem;
-            font-size: 2rem;
-            margin: 15rem 2rem 0 0;
-        }
-    
-        .hero-numbers {
-            font-size: 2rem;
-        }
-    
-        .fig-sub-container {
-            border: none;
-            text-align: center;
-        }
-    
-        .sitting, .dinning, .bedroom {
-            grid-column: 1 / -1;
-        }
-    
-        .sitting img {
-            width: 100%;
-        }
+      .write-up-content{
+        grid-column: 1/13;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
 
-        .dinning{
-            display: none;
-        }
-        .bedroom{
-            display: none;
-        }
-    
+    .paragraph-text {
+        font-size: 2.2rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .shop-now a, .view-details a {
+        padding: 1.3rem 1rem;
+    } 
+
+    .fig-div {
+        justify-content: center;
+        gap: 4rem;
+    }
+
+   .fig-sub-container{  
+    padding-right: 2rem;
+    }
+
+    .sitting{
+        grid-column: 1/9;
+    }
+    .dinning{
+        grid-column: 9/11;
+    }
+    .bedroom{
+        grid-column: 11/13;
+    }
+
+    .modern-design, .paragraph-text, .link-buttons, .fig-div{
+        padding-left: 0;
+    }
+
     /* the small link section */
     .small-link{
         margin: 0.8rem 0 0 0;
@@ -1208,6 +1159,10 @@ footer {
 }
 
 @media (max-width: 390px){
+    html {
+        font-size: 50%;
+      }
+
     .luxury-1a-sub,
     .textile-sub,
     .table-sub{
@@ -1219,102 +1174,72 @@ footer {
     color: var(--WHITE);
 }
 
-.luxury-1a-sub{
-    gap: 60rem;
-}
+    .luxury-1a-sub{
+        gap: 60rem;
+    }
 
 }
 
 @media (min-width: 320px) and (max-width: 430px){
     html {
         font-size: 50%;
-        overflow-x: hidden;
       }
-        section.landingpage{
-            display: grid;
-            grid-template-columns: repeat(1fr, 12);
-            gap: 2rem;
-            position: relative;
-            margin: 5% 5% 0 5%;
-        }
-        
-        .overlay{
-            background: rgba(0, 0, 0, 0.5);
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            border-radius: 1.6rem;
-        }
+      
+      section.landingpage{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 2rem;
+        margin: 5% 0 0 0;
+    }
 
-        .write-up-content {
-            grid-column: 1 / -1;
-            gap: 1rem;
-            padding-left: 1rem;
-            padding-right: 1rem;
-            z-index: 1;
-            color: white;
-            display: flex;
-        }
-    
-        .view-details a{
-            color: var(--WHITE);
-            border-bottom: 1px solid var(--WHITE);
-        }
+      .write-up-content{
+        grid-column: 1/13;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+        width: 100%;
+    }
 
-        .modern-design {
-            margin: 8rem 4.5rem 1rem 0;
-            font-size: 3rem;
-            line-height: 1.2;
-            text-align: center;
-            color: var(--WHITE);
-        }
-    
-        .paragraph-text {
-            font-size: 1.3rem;
-            text-align: center;
-            padding: 0 1rem;
-            margin-top: 3rem;
-        }
-    
-        .link-buttons {
-            align-items: center;
-            gap: 2rem;
-            margin: 3rem 3rem 0 2rem;
-        }
-    
-        .shop-now a, .view-details a {
-            padding: 1rem 1rem;
-        }
-    
-        .fig-div {
-            margin: 6rem 4rem 0 0;
-            gap: 6rem;
-            font-size: 1.5rem;
-        }
-    
-        .hero-numbers {
-            font-size: 1.5rem;
-        }
-    
-        .fig-sub-container {
-            border: none;
-            text-align: center;
-        }
-    
-        .sitting, .dinning, .bedroom {
-            grid-column: 1 / -1;
-        }
-    
-        .sitting img {
-            width: 100%;
-        }
+    .paragraph-text {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1.8rem;
+    }
 
-        .dinning{
-            display: none;
-        }
-        .bedroom{
-            display: none;
-        }
+    .shop-now a, .view-details a {
+        padding: 1.3rem 1rem;
+    } 
+
+    .link-buttons{
+        gap: 2rem;
+    }
+
+    .fig-div {
+        justify-content: center;
+    }
+
+   .fig-sub-container{  
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .sitting{
+        grid-column: 1/9;
+    }
+    .dinning{
+        grid-column: 9/11;
+    }
+    .bedroom{
+        grid-column: 11/13;
+    }
+
+    .modern-design, .paragraph-text, .link-buttons, .fig-div{
+        padding-left: 0;
+    }
     
     /* the small link section */
     .small-link{
