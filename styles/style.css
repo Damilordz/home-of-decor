@@ -1184,7 +1184,7 @@ footer {
     html {
         font-size: 50%;
       }
-      
+
       section.landingpage{
         display: grid;
         grid-template-columns: repeat(12, 1fr);
