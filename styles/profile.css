@@ -111,6 +111,9 @@ body {
   border-radius: 2rem !important;
 }
 
+.save a{
+  color: #fff;
+}
 /* Medai Query Section */
 @media (width > 768px) and (max-width:1024px) {
   .profile-section {

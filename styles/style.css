@@ -29,13 +29,13 @@ body{
 .font{
     font-size: 1.5rem;
 }
+
 /* hero section */
 section.landingpage{
     display: grid;
     grid-template-columns: repeat(1fr, 12);
     gap: 2rem;
-    /* position: relative; */
-    margin: 0 7rem 0 2.5rem;
+    margin: 5.5rem 7rem 0 2.5rem;
 }
 
 /* continued hero section */
@@ -602,6 +602,7 @@ ul.sample-rooms{
 .teacher-student{
     color: var(--GREY-DARK);
 }
+
 /* FAQ*/
 .got-questions{
     display: flex;
@@ -661,6 +662,8 @@ ul.sample-rooms{
     padding: 2rem;
     font-size: 1.8rem;
     line-height: 1.7;
+    display: flex;
+    flex-direction: column;
 }
 
 .coment-add {
